@@ -1,0 +1,114 @@
+@mixin opacity($r, $g, $b, $deskOpa, $mobOpa) {
+    background: rgba($r,$g,$b, $deskOpa);
+    @media screen and (max-width: 500px) {
+        background: rgba($r,$g,$b, $mobOpa);
+    }
+}
+
+.courses{
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    .overlay{
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        padding-top: 300px;
+        padding-bottom: 100px;
+    }
+    .course-details{
+        position: absolute;
+        padding-top: 80px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        @media screen and (max-width: 500px) {
+            bottom: 0;
+            padding-top: 60px;
+        }
+    }
+    h2{
+        color: #fff;
+        @media screen and (max-width: 500px) {
+            font-size: 1.3em;
+        }
+        &.dot{
+            @media screen and (max-width: 500px) {
+                display: none;
+            }            
+        }
+    }
+    p{
+        color: #E3E3E3;
+        &.container{
+            @media screen and (max-width: 500px) {
+                display: none;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 0.8em;
+        }
+        &.mob{
+            display: none;
+            @media screen and (max-width: 500px) {
+                display: block
+            }
+        }
+    }
+}
+.geriatric{
+    background-image: url("images/geriatric.jpg");
+    .course-details{
+        @include opacity(46,204,113, 0.9, 0.3);
+    }
+}
+.primary-health-care{
+    background-image: url("images/primary-health-care.jpg");
+    .course-details{
+        @include opacity(52,152,219,0.9,0.3);
+    }
+}
+.primary-dental-care{
+    background-image: url("images/primary-dental-care.jpg");
+    .course-details{
+        @include opacity(52,73,94,0.9,0.3);
+    }
+}
+.theatre{
+    background-image: url("images/theatre.jpg");
+    .course-details{
+        @include opacity(230,126,34,0.9,0.3);
+    }
+}
+.physician{
+    background-image: url("images/physician.jpg");
+    .course-details{
+        @include opacity(46,204,113, 0.9, 0.3);
+    }
+}
+.pharmacy{
+    background-image: url("images/pharmacy.jpg");
+    .course-details{
+        @include opacity(52,152,219,0.9,0.3);
+    }
+}
+.lab{
+    background-image: url("images/lab.jpg");
+    .course-details{
+        @include opacity(52,73,94,0.9,0.3);
+    }
+}
+.ward{
+    background-image: url("images/ward.jpg");
+    .course-details{
+        @include opacity(230,126,34,0.9,0.3);
+    }
+}
+.opd{
+    background-image: url("images/opd.jpg");
+    .course-details{
+        @include opacity(46,204,113, 0.9, 0.3);
+    }
+}

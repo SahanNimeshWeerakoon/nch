@@ -1,0 +1,19 @@
+.studymore{
+    padding-top: 80px;
+    .container{
+        .col-md-4{
+            .img{
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        >p{
+            text-align: center;
+        }
+        img{
+            width: 50%;
+        }
+    }
+}

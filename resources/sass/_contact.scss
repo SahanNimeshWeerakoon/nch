@@ -1,0 +1,30 @@
+.contact{
+    padding-top: 80px;
+    .col-md-4{
+        .row{
+            >div{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                h3,p{
+                    display: block;
+                    width: 100%;
+                    @media screen and (max-width: 500px) {
+                        text-align: center;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                opacity: 0.9;
+                transition: 0.5s;
+                &:hover{
+                    opacity: 1;
+                }
+                @media screen and (max-width: 500px) {
+                    width: 20%;
+                }
+            }
+        }
+    }
+}

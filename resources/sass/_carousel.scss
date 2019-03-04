@@ -1,0 +1,92 @@
+.carousel{
+    padding-top: 70px;
+    .carousel-inner{
+        .carousel-item{
+            height: 100vh;
+            background: #000;
+            @media screen and (max-width: 500px) {
+                height: auto;
+            }
+            img{
+                opacity: 0.3;
+            }
+            .carousel-caption{
+                display: none;
+                @media screen and (max-width: 500px) {
+                    display: block;
+                    p{
+                        font-size: 0.6em;
+                        margin-bottom: -5px;
+                    }
+                    a{
+                        font-size: 0.6em;
+                        padding: 3px 5px;
+                    }
+                }
+            }
+        }
+        .carousel-control-prev, .carousel-control-next, .carousel-indicators{
+            z-index: 2;
+        }
+    }
+}
+.carousel-inner-content{
+    height: 100vh;
+    margin-top: -100vh;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 500px) {
+        height: auto;
+        margin-top: 0px;
+        background-image: url("slider3.jpg");
+        background-size: cover;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        @media screen and (max-width: 500px) {
+            display: block;
+        }
+        .col-md-7{
+            color: #BBB;
+            display: flex;
+            align-items: center;
+            align-content: space-between;
+            flex-direction: column;
+            p, a{
+                @media screen and (max-width: 500px) {
+                    display: none;
+                }
+            }
+            a{
+                margin-top: 30px;
+            }
+        }
+        .col-md-5{
+            @media screen and (max-width: 500px) {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            form{
+                border: 1px solid #999;
+                border-radius: 5px;
+                padding: 10px 30px 50px 30px;
+                @media screen and (max-width: 500px) {
+                    background: rgba(0,0,0,0.5);
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
+                hr{
+                    border-color: #555;
+                }
+                label{
+                    color: #DDD;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}

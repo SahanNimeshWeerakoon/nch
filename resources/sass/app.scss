@@ -1,0 +1,82 @@
+html{
+  scroll-behavior: smooth;
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.alert-success{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+}
+
+.register-now-btn{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  animation-name: register;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  &:hover{
+    animation-name: test;
+    transform: scale(1.1);
+  }
+  @media screen and (max-width: 500px) {
+    transform: scale(0.9);
+  }
+  // display: none;
+}
+@keyframes register {
+  48% { transform: rotate(0deg) }
+  49% { transform: rotate(20deg) }
+  50% { transform: rotate(0deg) }
+  51% { transform: rotate(-20deg) }
+  52% { transform: rotate(0deg) }
+}
+
+// Navigation
+@import 'nav';
+
+// Carousel styling
+@import 'carousel';
+
+// About Us
+@import 'about';
+
+// Courses Common Styling
+@import 'courses';
+
+// Career Support 
+@import 'career';
+
+// Study More
+@import 'studymore';
+
+// Students
+@import 'students';
+
+// Team
+@import 'team';
+
+// Contact
+@import 'contact';
+
+// Footer
+@import 'footer';

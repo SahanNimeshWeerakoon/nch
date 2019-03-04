@@ -1,0 +1,26 @@
+.students{
+    padding-top: 80px;
+    .student{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        @media screen and (max-width: 500px) {
+            display: block;
+        }
+        >div{
+            width: 15%;
+            margin: auto;
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            padding: 20px;
+            width: 85%;
+            @media screen and (max-width: 500px) {
+                text-align: center;
+                font-size: 0.8em;
+            }
+        }
+    }
+}
